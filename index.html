@@ -1,0 +1,124 @@
+<!DOCTYPE html><html>
+<head>
+  <title>Petri-Chor: The Maharajas' Express Heist</title>  <style>
+    body {
+      margin: 0;
+      font-family: Arial;
+      color: white;
+      text-align: center;
+      background: black;
+      overflow-x: hidden;
+    }
+
+    /* 🌌 Stars */
+    .stars, .stars2, .stars3 {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      z-index: -3;
+    }
+
+    .stars {
+      background: url('https://raw.githubusercontent.com/Kobe2510/space-backgrounds/main/stars.png');
+      animation: moveStars 100s linear infinite;
+    }
+
+    .stars2 {
+      background: url('https://raw.githubusercontent.com/Kobe2510/space-backgrounds/main/stars.png');
+      animation: moveStars 150s linear infinite;
+      opacity: 0.5;
+    }
+
+    .stars3 {
+      background: url('https://raw.githubusercontent.com/Kobe2510/space-backgrounds/main/stars.png');
+      animation: moveStars 200s linear infinite;
+      opacity: 0.3;
+    }
+
+    @keyframes moveStars {
+      from {transform: translateY(0);}
+      to {transform: translateY(-2000px);}
+    }
+
+    h1 {
+      margin-top: 50px;
+      color: #00f0ff;
+      text-shadow: 0 0 15px #00f0ff;
+    }
+
+    h3 {
+      color: #ff66ff;
+    }
+
+    /* 📚 Chapter buttons */
+    .chapter-box {
+      margin-top: 30px;
+    }
+
+    .chapter-btn {
+      display: block;
+      width: 220px;
+      margin: 10px auto;
+      padding: 12px;
+      background: linear-gradient(45deg, #00f0ff, #ff00ff);
+      color: white;
+      text-decoration: none;
+      border-radius: 10px;
+      font-weight: bold;
+      box-shadow: 0 0 10px #00f0ff;
+    }
+
+    .chapter-btn:hover {
+      transform: scale(1.05);
+    }
+
+    /* ⭐ Button */
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 20px;
+      background: linear-gradient(45deg, #00f0ff, #ff00ff);
+      color: white;
+      text-decoration: none;
+      border-radius: 10px;
+      font-weight: bold;
+    }
+
+    /* 🚂 Train */
+    .train {
+      position: absolute;
+      bottom: 10px;
+      left: -200px;
+      font-size: 40px;
+      animation: moveTrain 12s linear infinite;
+    }
+
+    @keyframes moveTrain {
+      0% {left: -200px;}
+      100% {left: 110%;}
+    }
+
+  </style></head><body>  <!-- 🌌 background -->  <div class="stars"></div>
+  <div class="stars2"></div>
+  <div class="stars3"></div>  <h1>🚂 Petri-Chor: The Maharajas' Express Heist</h1>
+  <h3>by Vidyasagar</h3>  <p>Welcome to your interactive book universe 🌌📖</p>  <h2>📚 Chapters</h2>  <div class="chapter-box"><a class="chapter-btn" href="#ch1">Chapter 1: The Missing Rings</a>
+<a class="chapter-btn" href="#ch2">Chapter 2: The Fake Innocent</a>
+<a class="chapter-btn" href="#ch3">Chapter 3: The Hidden Clue</a>
+<a class="chapter-btn" href="#ch4">Chapter 4: The Train Awakens</a>
+
+  </div>  <h2>📖 Chapter Preview</h2>  <div id="ch1">
+    <h3>Chapter 1</h3>
+    <p>The rings of Saturn vanished without a trace… and the Maharajas' Express was the only witness 🚂🌌</p>
+  </div>  <div id="ch2">
+    <h3>Chapter 2</h3>
+    <p>Someone who looked innocent was hiding something dangerous… 😲</p>
+  </div>  <div id="ch3">
+    <h3>Chapter 3</h3>
+    <p>A secret message was found inside the quantum engine logs… ⚡</p>
+  </div>  <div id="ch4">
+    <h3>Chapter 4</h3>
+    <p>The train itself began to respond… as if it was alive 🚂💨</p>
+  </div>  <h2>⭐ Rate the Book</h2>  <a class="btn" href="https://docs.google.com/forms/d/e/1FAIpQLScPO-WfHPqqgmosn17KAykWz2Ru7OkcJxZqqTM1D1oFT10Q-g/viewform?usp=publish-editor">
+    Give Rating
+  </a>  <div class="train">🚂💨</div></body>
+  </html>
