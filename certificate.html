@@ -1,6 +1,7 @@
 <!DOCTYPE html><html>
 <head>
 <title>🏆 Bot Hunter Certificate</title><style>
+
 body{
 background:black;
 color:white;
@@ -46,6 +47,30 @@ margin-right:auto;
 color:cyan;
 font-weight:bold;
 }
+
+/* 🖨 Print Only Certificate */
+
+@media print {
+
+body * {
+visibility:hidden;
+}
+
+#certificate,
+#certificate * {
+visibility:visible;
+}
+
+#certificate{
+position:absolute;
+left:0;
+top:0;
+width:100%;
+margin:0;
+}
+
+}
+
 </style></head><body><h1>🏆 BOT HUNTER CERTIFICATE</h1><p>Enter your name:</p><input id="name" placeholder="Your Name"><br><br>
 
 <button onclick="generateCertificate()">
