@@ -1,9 +1,6 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html><html>
 <head>
-<title>🏆 Bot Hunter Certificate</title>
-
-<style>
+<title>🏆 Bot Hunter Certificate</title><style>
 body{
 background:black;
 color:white;
@@ -20,6 +17,7 @@ input{
 padding:12px;
 font-size:18px;
 border-radius:10px;
+border:none;
 }
 
 button{
@@ -29,6 +27,7 @@ background:gold;
 border:none;
 border-radius:10px;
 font-weight:bold;
+cursor:pointer;
 }
 
 #certificate{
@@ -38,59 +37,35 @@ border:8px solid gold;
 background:#111;
 border-radius:20px;
 display:none;
+max-width:800px;
+margin-left:auto;
+margin-right:auto;
 }
 
 .code{
 color:cyan;
 font-weight:bold;
 }
-</style>
-</head>
-
-<body>
-
-<h1>🏆 BOT HUNTER CERTIFICATE</h1>
-
-<p>Enter your name:</p>
-
-<input id="name" placeholder="Your Name">
-
-<br><br>
+</style></head><body><h1>🏆 BOT HUNTER CERTIFICATE</h1><p>Enter your name:</p><input id="name" placeholder="Your Name"><br><br>
 
 <button onclick="generateCertificate()">
 🏆 Generate Certificate
-</button>
-
-<div id="certificate">
-
-<h1>🏆 BOT HUNTER CERTIFICATE</h1>
-
-<h2>Awarded to</h2>
-
-<h1 id="readerName"></h1>
-
-<p>
+</button><div id="certificate"><h1>🏆 BOT HUNTER CERTIFICATE</h1><h2>Awarded to</h2><h1 id="readerName"></h1><p>
 For successfully locating all 13 Security Bots
 aboard the Maharajas' Express.
-</p>
-
-<h2>🔐 VIP ACCESS CODE</h2>
-
-<h2 class="code">
+</p><h2>🔐 VIP ACCESS CODE</h2><h2 class="code">
 GXIII-2026-PETRI
-</h2>
-
-<p>
+</h2><p>
 🤖 Signed by Petri-Chor
-</p>
-
-<p>
+</p><p>
+🚂 Maharajas' Express
+<br>
 by Vidyasagar
-</p>
+</p><br><br>
 
-</div>
-
-<script>
+<button onclick="downloadCertificate()">
+📥 Download Certificate
+</button></div><script>
 
 function generateCertificate(){
 
@@ -107,7 +82,11 @@ document.getElementById("certificate").style.display="block";
 
 }
 
-</script>
+function downloadCertificate(){
 
-</body>
+window.print();
+
+}
+
+</script></body>
 </html>
